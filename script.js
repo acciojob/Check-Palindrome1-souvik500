@@ -2,5 +2,13 @@
 
 function palindrome(str){
 
+	StringBuffer buffer = new StringBuffer(str);
+      buffer.reverse();
+      String data = buffer.toString();
+      if(str.equals(data)){
+         return true
+      } else {
+         return false;
+      }
 }
 module.exports = palindrome
