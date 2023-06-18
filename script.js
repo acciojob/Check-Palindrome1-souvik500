@@ -1,13 +1,13 @@
 // complete the given function
 
 function palindrome(str){
-
-	const reversedString = str.split('').reverse().join('');
-    if(str === reversedString)
-          return true;
-    
-          return false;
-	
+	let s = str.toLowerCase();
+	let strr = s.split('').reverse().join('');
+	// alert(strr);
+	if(s === strr){ 
+		return true;
+	}
+	return false;
 }
 
 let res = palindrome("Racecar")
