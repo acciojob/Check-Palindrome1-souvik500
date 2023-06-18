@@ -2,13 +2,11 @@
 
 function palindrome(str){
 
-	StringBuffer buffer = new StringBuffer(str);
-      buffer.reverse();
-      String data = buffer.toString();
-      if(str.equalsIgnoreCase(data)){
-         return true
-      } else {
-         return false;
-      }
+	const reversedString = str.split('').reverse().join('');
+    if(str === reversedString)
+          return true;
+    else
+          return false;
+	
 }
 module.exports = palindrome
